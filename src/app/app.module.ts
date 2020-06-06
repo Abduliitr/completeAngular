@@ -20,6 +20,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { DishService } from '../app/services/dish.service';
+import { PromotionService } from '../app/services/promotion.service';
+import { LeaderService } from '../app/services/leader.service';
 
 import {AppRoutingModule } from './app-routing/app-routing.module';
 
@@ -46,7 +48,9 @@ import {AppRoutingModule } from './app-routing/app-routing.module';
     MatButtonModule
   ],
   providers: [
-    DishService
+    DishService,
+    PromotionService,
+    LeaderService
   ],
   bootstrap: [AppComponent]
 })
